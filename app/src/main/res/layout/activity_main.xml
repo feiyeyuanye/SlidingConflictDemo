@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.slidingconflictapplication.activity.MainActivity">
+    <com.example.slidingconflictapplication.view.ActivityViewPager
+        android:layout_marginTop="25dp"
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@id/line">
+
+    </com.example.slidingconflictapplication.view.ActivityViewPager>
+    <Spinner
+        android:layout_above="@id/ll_select"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray">
+
+    </Spinner>
+    <LinearLayout
+        android:id="@+id/ll_select"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:background="@drawable/selector_btn"
+            android:id="@+id/tv_one"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:background="@drawable/selector_btn"
+            android:id="@+id/tv_two"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="2"/>
+        <TextView
+            android:textColor="@android:color/black"
+            android:background="@drawable/selector_btn"
+            android:id="@+id/tv_thr"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="3"/>
+    </LinearLayout>
+
+</RelativeLayout>
